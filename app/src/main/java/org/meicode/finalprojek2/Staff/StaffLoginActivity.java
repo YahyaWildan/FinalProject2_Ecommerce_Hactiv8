@@ -1,14 +1,16 @@
-package org.meicode.finalprojek2;
+package org.meicode.finalprojek2.Staff;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class AdminPage extends AppCompatActivity {
+import org.meicode.finalprojek2.R;
+
+public class StaffLoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_page);
+        setContentView(R.layout.activity_staff_login_pages);
     }
 }

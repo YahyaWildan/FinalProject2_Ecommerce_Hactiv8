@@ -1,10 +1,12 @@
-package org.meicode.finalprojek2;
+package org.meicode.finalprojek2.User;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class UserLoginPages extends AppCompatActivity {
+import org.meicode.finalprojek2.R;
+
+public class UserLoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

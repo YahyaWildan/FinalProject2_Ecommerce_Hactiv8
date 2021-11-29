@@ -4,45 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AdminLogin">
+    android:padding="16dp"
+    tools:context=".Admin.AdminLoginActivity">
 
+
+    <TextView
+        android:id="@+id/tvTittleLoginStaff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/txt_login_as_staff"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edtStaffName"
+        android:id="@+id/etStaffUserName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="Enter UserName"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"
+        android:hint="@string/txt_username"
+        android:inputType="text"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTittleLoginStaff" />
+
+    <EditText
+        android:id="@+id/etStaffPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/txt_password"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etStaffUserName" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLoginStaff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/orange_custom_button"
+        android:text="@string/txt_login"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/tvAdminNote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etStaffPassword" />
+
+    <TextView
+        android:id="@+id/tvAdminNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_we_wish_you_a_happy_working_day"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginLeft="60sp"
-        android:layout_marginRight="60sp"/>
-
-    <EditText
-        android:id="@+id/edtStaffPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:text="Enter Password"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edtStaffName"
-        android:layout_marginTop="30sp"
-        android:layout_marginLeft="60sp"
-        android:layout_marginRight="60sp"/>
-
-    <Button
-        android:id="@+id/btnLoginUser"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Login As Staff"
-        android:background="@drawable/yellow_custom_button"
-        app:layout_constraintTop_toBottomOf="@+id/edtStaffPassword"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="30sp"
-        android:layout_marginLeft="30sp"
-        android:layout_marginRight="30sp"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

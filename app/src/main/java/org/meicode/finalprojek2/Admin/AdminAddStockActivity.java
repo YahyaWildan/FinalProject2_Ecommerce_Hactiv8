@@ -1,10 +1,12 @@
-package org.meicode.finalprojek2;
+package org.meicode.finalprojek2.Admin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class AdminAddStock extends AppCompatActivity {
+import org.meicode.finalprojek2.R;
+
+public class AdminAddStockActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

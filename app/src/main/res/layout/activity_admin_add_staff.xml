@@ -4,57 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AdminAddStaff">
+    android:padding="16dp"
+    tools:context=".Admin.AdminAddStaffActivity">
+
+    <TextView
+        android:id="@+id/tvTittleAddStaff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/txt_add_staff"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edtAddStaffAdminUserName"
+        android:id="@+id/etAddStaffAdminUserName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Name"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"
+        android:hint="@string/txt_name"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="100sp"
-        android:layout_marginLeft="60sp"
-        android:layout_marginRight="60sp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTittleAddStaff" />
 
     <EditText
-        android:id="@+id/edtAddStaffAdminPassword"
+        android:id="@+id/etAddStaffAdminPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Password"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:hint="@string/txt_password"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edtAddStaffAdminUserName"
-        android:layout_marginTop="100sp"
-        android:layout_marginLeft="60sp"
-        android:layout_marginRight="60sp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etAddStaffAdminUserName" />
 
     <EditText
-        android:id="@+id/edtAddStaffConfirmPassword"
+        android:id="@+id/etAddStaffConfirmPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Confirm Password"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:hint="@string/txt_confirm_password"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtAddStaffAdminPassword"
-        android:layout_marginTop="100sp"
-        android:layout_marginLeft="60sp"
-        android:layout_marginRight="60sp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAddStaffAdminPassword" />
 
     <Button
         android:id="@+id/btnAddStaffRegisterStaff"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Register Staff"
-        android:background="@drawable/purple_custom_button"
-        app:layout_constraintTop_toBottomOf="@+id/edtAddStaffConfirmPassword"
-        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/orange_custom_button"
+        android:text="@string/txt_register_staff"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="150sp"
-        android:layout_marginLeft="30sp"
-        android:layout_marginRight="30sp"/>
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAddStaffConfirmPassword" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

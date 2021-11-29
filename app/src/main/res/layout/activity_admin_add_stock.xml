@@ -4,47 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AdminAddStock">
+    android:padding="16dp"
+    tools:context=".Admin.AdminAddStockActivity">
+
+    <TextView
+        android:id="@+id/tvTittleAddStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/txt_add_stock"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edtIdAddStock"
+        android:id="@+id/etItemId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"
+        android:hint="@string/txt_enter_item_id"
+        android:inputType="text"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:hint="Enter Item ID"
-        android:layout_marginLeft="50sp"
-        android:layout_marginRight="50sp"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTittleAddStock" />
 
     <EditText
-        android:id="@+id/edtQuantityAddStock"
+        android:id="@+id/etQuantityItem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:hint="@string/txt_enter_quantity_to_add"
+        android:inputType="text"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtIdAddStock"
-        android:hint="Enter Item ID"
-        android:layout_marginTop="100sp"
-        android:layout_marginLeft="50sp"
-        android:layout_marginRight="50sp"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etItemId" />
+
 
     <Button
+        android:id="@+id/btnAddStaffRegisterStaff"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add Given Quantity To The Mentioned Item"
-        android:textSize="12dp"
-        android:background="@drawable/purple_custom_button"
-        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/orange_custom_button"
+        android:text="@string/txt_register_staff"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edtQuantityAddStock"
-        android:layout_marginTop="80sp"
-        android:layout_marginLeft="30sp"
-        android:layout_marginRight="30sp"
-        />
-    >
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etQuantityItem" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
