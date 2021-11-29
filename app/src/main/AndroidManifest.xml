@@ -10,37 +10,39 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProjek2">
         <activity
-            android:name=".StaffLoginPages"
-            android:exported="true" />
-        <activity
-            android:name=".UserLoginPages"
-            android:exported="true" />
-        <activity
-            android:name=".UserRegisterPages"
-            android:exported="true" />
-        <activity
-            android:name=".MemberLogin"
-            android:exported="true" />
-        <activity
-            android:name=".AdminAddStock"
-            android:exported="true" />
-        <activity
-            android:name=".AdminAddStaff"
-            android:exported="true" />
-        <activity
-            android:name=".AdminPage"
-            android:exported="true" />
-        <activity
-            android:name=".AdminLogin"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".SplashScreenActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".Staff.StaffLoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".User.UserLoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".User.UserRegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Admin.AdminAddStockActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Admin.AdminAddStaffActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Admin.AdminActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Admin.AdminLoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
         </activity>
     </application>
 

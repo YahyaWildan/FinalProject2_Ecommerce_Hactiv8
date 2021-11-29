@@ -1,10 +1,12 @@
-package org.meicode.finalprojek2;
+package org.meicode.finalprojek2.Staff;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class StaffLoginPages extends AppCompatActivity {
+import org.meicode.finalprojek2.R;
+
+public class StaffLoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -3,46 +3,70 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp">
 
+
+    <TextView
+        android:id="@+id/tvTittleLoginUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/txt_login_as_user"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edtUserPhoneNumber"
+        android:id="@+id/etUserUserName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="Enter your phone number"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"
+        android:hint="@string/txt_username"
+        android:inputType="text"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginLeft="60sp"
-        android:layout_marginRight="60sp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTittleLoginUser" />
 
     <EditText
-        android:id="@+id/edtUserPassword"
+        android:id="@+id/etUserPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="Enter your password"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:hint="@string/txt_password"
+        android:inputType="textPassword"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edtUserPhoneNumber"
-        android:layout_marginTop="30sp"
-        android:layout_marginLeft="60sp"
-        android:layout_marginRight="60sp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etUserUserName" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnLoginUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login"
+        android:background="@drawable/orange_custom_button"
+        android:text="@string/txt_login"
         android:textColor="@color/white"
-        android:background="@drawable/red_custom_button"
-        app:layout_constraintTop_toBottomOf="@+id/edtUserPassword"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/tvAdminNote"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="30sp"
-        android:layout_marginLeft="30sp"
-        android:layout_marginRight="30sp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUserPassword" />
 
+    <TextView
+        android:id="@+id/tvAdminNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_we_wish_you_a_happy_working_day"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
