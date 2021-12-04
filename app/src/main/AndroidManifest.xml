@@ -11,7 +11,7 @@
         android:theme="@style/Theme.FinalProjek2">
         <activity
             android:name=".SplashScreenActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,10 +19,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Staff.StaffLoginActivity"
+            android:name=".Staff.StaffLoginPagesActivity"
             android:exported="true" />
         <activity
-            android:name=".User.UserLoginActivity"
+            android:name=".User.UserLoginPagesActivity"
             android:exported="true" />
         <activity
             android:name=".User.UserRegisterActivity"
@@ -37,10 +37,10 @@
             android:name=".Admin.AdminActivity"
             android:exported="true" />
         <activity
-            android:name=".Admin.AdminLoginActivity"
+            android:name=".Admin.AdminLoginPagesActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".MainLoginActivity"
             android:exported="true">
 
         </activity>

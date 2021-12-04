@@ -19,4 +19,5 @@
     <string name="txt_username">Username</string>
     <string name="txt_login">Login</string>
     <string name="txt_login_as_user">Login as user</string>
+    <string name="register_stock">Register Stock</string>
 </resources>

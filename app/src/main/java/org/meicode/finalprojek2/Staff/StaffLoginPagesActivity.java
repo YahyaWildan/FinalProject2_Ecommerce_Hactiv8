@@ -5,12 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import org.meicode.finalprojek2.R;
+import org.meicode.finalprojek2.databinding.ActivityStaffLoginPagesBinding;
 
-public class StaffLoginActivity extends AppCompatActivity {
+public class StaffLoginPagesActivity extends AppCompatActivity {
+    ActivityStaffLoginPagesBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_staff_login_pages);
+        setContentView(binding.getRoot());
     }
 }

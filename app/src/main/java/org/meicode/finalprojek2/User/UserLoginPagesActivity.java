@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import org.meicode.finalprojek2.R;
+import org.meicode.finalprojek2.databinding.ActivityUserLoginPagesBinding;
 
-public class UserLoginActivity extends AppCompatActivity {
+public class UserLoginPagesActivity extends AppCompatActivity {
+    ActivityUserLoginPagesBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
