@@ -20,4 +20,16 @@
     <string name="txt_login">Login</string>
     <string name="txt_login_as_user">Login as user</string>
     <string name="register_stock">Register Stock</string>
+    <string name="registerOption">Register</string>
+    <string name="loginOption">Login</string>
+    <string name="menuOption">menuOption</string>
+    <string name="mens_nclothing_nand_napparels">Mens\nclothing\nand\napparels</string>
+    <string name="formals">Formals</string>
+    <string name="t_shirts">T-Shirts</string>
+    <string name="bottom_wear">Bottom Wear</string>
+    <string name="shoes">Shoes</string>
+    <string name="computer">Computer</string>
+    <string name="smartphone">SmartPhone</string>
+    <string name="_500">500$</string>
+    <string name="t_shirt">t-shirt</string>
 </resources>

@@ -1,14 +1,13 @@
-package org.meicode.finalprojek2;
+package org.meicode.finalprojek2.OtherItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import org.meicode.finalprojek2.databinding.ActivityMainBinding;
+import org.meicode.finalprojek2.databinding.ActivityOtherItemProductBinding;
 
-public class MainActivity extends AppCompatActivity {
-    ActivityMainBinding binding;
-
+public class OtherItemProductActivity extends AppCompatActivity {
+    ActivityOtherItemProductBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

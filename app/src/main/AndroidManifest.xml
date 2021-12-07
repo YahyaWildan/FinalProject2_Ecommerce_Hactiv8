@@ -10,6 +10,39 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProjek2">
         <activity
+            android:name=".OtherItem.OtherItemProductDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Electronic.ElectronicProductDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Clothing.ClothingProductDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Book.BookProductDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".OtherItem.OtherItemProductActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Book.BookProductListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Electronic.ElectronicProductListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Clothing.ClothingProductListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Electronic.ElectronicCategoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Clothing.ClothingCategoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Clothing.ClothingAccGenderActivity"
+            android:exported="true" />
+        <activity
             android:name=".SplashScreenActivity"
             android:exported="true">
             <intent-filter>
@@ -41,9 +74,7 @@
             android:exported="true" />
         <activity
             android:name=".MainLoginActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
