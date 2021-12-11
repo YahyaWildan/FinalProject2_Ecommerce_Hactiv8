@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/etAddStaffAdminUserName"
+        android:id="@+id/etAddStaffName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -33,7 +33,18 @@
         app:layout_constraintTop_toBottomOf="@id/tvTittleAddStaff" />
 
     <EditText
-        android:id="@+id/etAddStaffAdminPassword"
+        android:id="@+id/etAddStaffUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/txt_username"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etAddStaffName" />
+
+    <EditText
+        android:id="@+id/etAddStaffPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -41,7 +52,7 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etAddStaffAdminUserName" />
+        app:layout_constraintTop_toBottomOf="@id/etAddStaffUserName" />
 
     <EditText
         android:id="@+id/etAddStaffConfirmPassword"
@@ -52,7 +63,7 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etAddStaffAdminPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/etAddStaffPassword" />
 
     <Button
         android:id="@+id/btnAddStaffRegister"

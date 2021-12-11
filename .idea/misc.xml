@@ -52,10 +52,13 @@
         <entry key="..\:/Users/Harry/AndroidStudioProjects/FinalProjek2/app/src/main/res/layout/activity_user_register_pages.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/yahya/AndroidStudioProjects/FinalProject2Kelompok4/app/src/main/res/drawable/orange_custom_button.xml" value="0.2898148148148148" />
         <entry key="..\:/Users/yahya/AndroidStudioProjects/FinalProject2Kelompok4/app/src/main/res/drawable/purple_custom_button.xml" value="0.2898148148148148" />
+        <entry key="..\:/Users/yahya/AndroidStudioProjects/FinalProject2Kelompok4/app/src/main/res/layout/activity_admin.xml" value="0.2558876811594203" />
         <entry key="..\:/Users/yahya/AndroidStudioProjects/FinalProject2Kelompok4/app/src/main/res/layout/activity_admin_add_staff.xml" value="0.25" />
         <entry key="..\:/Users/yahya/AndroidStudioProjects/FinalProject2Kelompok4/app/src/main/res/layout/activity_admin_add_stock.xml" value="0.33" />
         <entry key="..\:/Users/yahya/AndroidStudioProjects/FinalProject2Kelompok4/app/src/main/res/layout/activity_admin_login.xml" value="0.33" />
+        <entry key="..\:/Users/yahya/AndroidStudioProjects/FinalProject2Kelompok4/app/src/main/res/layout/activity_admin_login_pages.xml" value="0.192481884057971" />
         <entry key="..\:/Users/yahya/AndroidStudioProjects/FinalProject2Kelompok4/app/src/main/res/layout/activity_admin_page.xml" value="0.192481884057971" />
+        <entry key="..\:/Users/yahya/AndroidStudioProjects/FinalProject2Kelompok4/app/src/main/res/layout/activity_home_pages.xml" value="0.15625" />
         <entry key="..\:/Users/yahya/AndroidStudioProjects/FinalProject2Kelompok4/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/yahya/AndroidStudioProjects/FinalProject2Kelompok4/app/src/main/res/layout/activity_member_login.xml" value="0.25" />
         <entry key="..\:/Users/yahya/AndroidStudioProjects/FinalProject2Kelompok4/app/src/main/res/layout/activity_splash_screen.xml" value="0.192481884057971" />

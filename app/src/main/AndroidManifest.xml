@@ -73,7 +73,7 @@
             android:name=".Admin.AdminLoginPagesActivity"
             android:exported="true" />
         <activity
-            android:name=".MainLoginActivity"
+            android:name=".MainActivity"
             android:exported="true" />
     </application>
 
