@@ -1,5 +1,7 @@
 package org.meicode.finalprojek2.User;
 
+import static org.meicode.finalprojek2.Database.Preference.DATABASE_REFERENCE;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -10,6 +12,8 @@ import android.widget.Toast;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import org.meicode.finalprojek2.Admin.AdminActivity;
+import org.meicode.finalprojek2.Admin.AdminAddStaffActivity;
 import org.meicode.finalprojek2.databinding.ActivityUserRegisterPagesBinding;
 
 public class UserRegisterActivity extends AppCompatActivity {
@@ -27,21 +31,23 @@ public class UserRegisterActivity extends AppCompatActivity {
         binding.btnUserRegisterCreateAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                registerUser();
+                String nameUserRegister = binding.etUserRegisterName.getText().toString();
+                String phoneNumberUserRegister = binding.etUserRegisterPhoneNo.getText().toString();
+                String passwordUserRegister = binding.etUserRegisterPassword.getText().toString();
+
+                if (nameUserRegister.isEmpty() || phoneNumberUserRegister.isEmpty() || passwordUserRegister.isEmpty()) {
+                    Toast.makeText(UserRegisterActivity.this, "Please complete the form", Toast.LENGTH_SHORT).show();
+                } else {
+                    DATABASE_REFERENCE.child("Users").child(phoneNumberUserRegister).child("nameUser").setValue(nameUserRegister);
+                    DATABASE_REFERENCE.child("Users").child(phoneNumberUserRegister).child("passwordUser").setValue(passwordUserRegister);
+                    Toast.makeText(UserRegisterActivity.this, "User Register Successfully", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(UserRegisterActivity.this, UserLoginPagesActivity.class));
+                    finish();
+                }
             }
         });
 
     }
-    public void registerUser(){
-        String name = binding.etUserRegisterName.getText().toString();
-        String phoneNumber = binding.etUserRegisterPhoneNo.getText().toString();
-        String password = binding.etUserRegisterPassword.getText().toString();
 
-        Users users = new Users(name,phoneNumber,password);
-        userDbRef.push().setValue(users);
-        Toast.makeText(UserRegisterActivity.this,"User Register Success", Toast.LENGTH_SHORT).show();
-        startActivity(new Intent(UserRegisterActivity.this, UserLoginPagesActivity.class));
-
-    }
 
 }

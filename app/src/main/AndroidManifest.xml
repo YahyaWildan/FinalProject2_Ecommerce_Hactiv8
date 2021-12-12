@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProjek2">
         <activity
+            android:name=".AboutActivity"
+            android:exported="false" />
+        <activity
             android:name=".OtherItem.OtherItemProductDetailActivity"
             android:exported="true" />
         <activity
@@ -73,7 +76,7 @@
             android:name=".Admin.AdminLoginPagesActivity"
             android:exported="true" />
         <activity
-            android:name=".MainLoginActivity"
+            android:name=".MainActivity"
             android:exported="true" />
     </application>
 

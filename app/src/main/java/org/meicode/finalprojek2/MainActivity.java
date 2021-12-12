@@ -10,43 +10,50 @@ import org.meicode.finalprojek2.Admin.AdminLoginPagesActivity;
 import org.meicode.finalprojek2.Staff.StaffLoginPagesActivity;
 import org.meicode.finalprojek2.User.UserLoginPagesActivity;
 import org.meicode.finalprojek2.User.UserRegisterActivity;
-import org.meicode.finalprojek2.databinding.ActivityMainLoginBinding;
+import org.meicode.finalprojek2.databinding.ActivityMainBinding;
 
-public class MainLoginActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
-    ActivityMainLoginBinding binding;
+    ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityMainLoginBinding.inflate(getLayoutInflater());
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         binding.tvNewUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainLoginActivity.this, UserRegisterActivity.class));
+                startActivity(new Intent(MainActivity.this, UserRegisterActivity.class));
             }
         });
 
         binding.btnGoToLoginUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainLoginActivity.this, UserLoginPagesActivity.class));
+                startActivity(new Intent(MainActivity.this, UserLoginPagesActivity.class));
             }
         });
 
         binding.tvAdminLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainLoginActivity.this, AdminLoginPagesActivity.class));
+                startActivity(new Intent(MainActivity.this, AdminLoginPagesActivity.class));
             }
         });
 
         binding.tvStaffLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainLoginActivity.this, StaffLoginPagesActivity.class));
+                startActivity(new Intent(MainActivity.this, StaffLoginPagesActivity.class));
+            }
+        });
+
+        binding.tvAbout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, AboutActivity.class));
             }
         });
     }

@@ -32,4 +32,8 @@
     <string name="smartphone">SmartPhone</string>
     <string name="_500">500$</string>
     <string name="t_shirt">t-shirt</string>
+    <string name="txt_submit">submit</string>
+    <string name="txt_team_member">Team Member</string>
+    <string name="txt_yahya_wildan">Yahya Wildan</string>
+    <string name="rvHomepages">RecycleHomePage</string>
 </resources>
