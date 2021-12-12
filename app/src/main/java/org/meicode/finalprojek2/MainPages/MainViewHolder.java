@@ -13,7 +13,6 @@ public class MainViewHolder extends RecyclerView.ViewHolder {
     }
 
     public void setDataToView(){
-        binding.ivProduk.setImageResource();
         binding.tvProduk.setText();
     }
 }
