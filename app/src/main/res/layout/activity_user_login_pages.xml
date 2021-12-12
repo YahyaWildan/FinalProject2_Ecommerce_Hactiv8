@@ -22,19 +22,20 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/etUserUserName"
+        android:id="@+id/etUserLoginPhoneNo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:hint="@string/txt_username"
-        android:inputType="text"
+        android:hint="@string/txt_phone_no"
+        android:inputType="phone"
+        android:maxLength="12"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvTittleLoginUser" />
 
     <EditText
-        android:id="@+id/etUserPassword"
+        android:id="@+id/etUserLoginPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -43,7 +44,7 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etUserUserName" />
+        app:layout_constraintTop_toBottomOf="@id/etUserLoginPhoneNo" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnLoginUser"
@@ -55,7 +56,7 @@
         app:layout_constraintBottom_toBottomOf="@id/tvAdminNote"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etUserPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/etUserLoginPassword" />
 
     <TextView
         android:id="@+id/tvAdminNote"

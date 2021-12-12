@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    tools:context=".AboutActivity">
+
+    <ImageView
+        android:id="@+id/ivHacktiv8"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/hacktiv8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTittlAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/txt_team_member"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivHacktiv8" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutProfile"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/white_custom_background"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTittlAbout">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProfile1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/wildan"
+            app:civ_border_color="@color/orange"
+            app:civ_border_width="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvNameProfile1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/txt_yahya_wildan"
+            android:textColor="@color/orange"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@id/tvKodeProfile1"
+            app:layout_constraintEnd_toEndOf="@id/layoutProfile"
+            app:layout_constraintStart_toEndOf="@id/imgProfile1" />
+
+        <TextView
+            android:id="@+id/tvKodeProfile1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JVAN-KS01-006"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/imgProfile1"
+            app:layout_constraintEnd_toEndOf="@id/layoutProfile"
+            app:layout_constraintStart_toEndOf="@id/imgProfile1"
+            app:layout_constraintTop_toTopOf="@id/imgProfile1" />
+
+        <TextView
+            android:id="@+id/tvUnivProfile1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Universitas Dian Nuswantoro"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/layoutProfile"
+            app:layout_constraintStart_toEndOf="@id/imgProfile1"
+            app:layout_constraintTop_toBottomOf="@id/tvKodeProfile1" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProfile2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/harry"
+            app:civ_border_color="@color/orange"
+            app:civ_border_width="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgProfile1" />
+
+        <TextView
+            android:id="@+id/tvNameProfile2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Harry Chandra"
+            android:textColor="@color/orange"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@id/tvKodeProfile2"
+            app:layout_constraintEnd_toStartOf="@id/imgProfile2"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tvKodeProfile2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JVAN-KS01-008"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/imgProfile2"
+            app:layout_constraintEnd_toStartOf="@id/imgProfile2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imgProfile2" />
+
+        <TextView
+            android:id="@+id/tvUnivProfile2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Universitas Tarumanegara"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@id/imgProfile2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvKodeProfile2" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/layoutProfile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Studi Independen - Android With Java Native"
+            android:textSize="12sp"
+            android:textAlignment="center"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
