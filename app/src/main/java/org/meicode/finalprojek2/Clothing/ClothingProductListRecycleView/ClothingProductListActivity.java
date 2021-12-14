@@ -1,4 +1,4 @@
-package org.meicode.finalprojek2.Clothing;
+package org.meicode.finalprojek2.Clothing.ClothingProductListRecycleView;
 
 import androidx.appcompat.app.AppCompatActivity;
 

@@ -34,7 +34,7 @@
             android:name=".Electronic.ElectronicProductListActivity"
             android:exported="true" />
         <activity
-            android:name=".Clothing.ClothingProductListActivity"
+            android:name=".Clothing.ClothingProductListRecycleView.ClothingProductListActivity"
             android:exported="true" />
         <activity
             android:name=".Electronic.ElectronicCategoryActivity"

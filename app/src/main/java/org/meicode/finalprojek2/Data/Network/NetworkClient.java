@@ -9,6 +9,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class NetworkClient {
     private static Retrofit retrofit = null;
+    public static final String SERVER_URL = "https://fakestoreapi.com/";
 
     public static Retrofit getInstance(){
         OkHttpClient client = new OkHttpClient.Builder()
@@ -16,7 +17,7 @@ public class NetworkClient {
 
         if (retrofit == null){
             retrofit = new Retrofit.Builder()
-                    .baseUrl(BuildConfig.SERVER_URL)
+                    .baseUrl(SERVER_URL)
                     .addConverterFactory(GsonConverterFactory.create())
                     .client(client)
                     .build();
