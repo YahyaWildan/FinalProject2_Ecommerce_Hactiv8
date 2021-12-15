@@ -4,25 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Clothing.ClothingAccGenderActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".Clothing.ClothingAccGenderActivity">
 
     <TextView
         android:id="@+id/tvMensClothing"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textAllCaps="true"
-        android:text="@string/mens_nclothing_nand_napparels"
         android:layout_weight="1"
-        android:gravity="center"/>
+        android:background="@drawable/mensclothing"
+        android:fontFamily="sans-serif-black"
+        android:gravity="right|center_vertical"
+        android:text="@string/mens_nclothing_nand_napparels"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="32sp" />
 
     <TextView
         android:id="@+id/tvWomensClothing"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="women's\nclothing and\napprels"
-        android:textAllCaps="true"
         android:layout_weight="1"
-        android:gravity="center"/>
+        android:background="@drawable/womenclothing"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center_vertical"
+        android:text="women's\nclothing\nand\napprels"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="32sp" />
 
 </LinearLayout>

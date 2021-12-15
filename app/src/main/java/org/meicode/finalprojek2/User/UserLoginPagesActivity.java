@@ -14,9 +14,8 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
 
-import org.meicode.finalprojek2.Admin.AdminActivity;
-import org.meicode.finalprojek2.Admin.AdminLoginPagesActivity;
-import org.meicode.finalprojek2.HomePages.HomePagesActivity;
+
+import org.meicode.finalprojek2.HomePageActivity;
 import org.meicode.finalprojek2.databinding.ActivityUserLoginPagesBinding;
 
 public class UserLoginPagesActivity extends AppCompatActivity {
@@ -44,7 +43,7 @@ public class UserLoginPagesActivity extends AppCompatActivity {
                                 String getPasswordLogin = snapshot.child(phoneNoLoginUser).child("passwordUser").getValue(String.class);
                                 if (getPasswordLogin.equals(passwordLoginUser)) {
                                     Toast.makeText(UserLoginPagesActivity.this, "Successfully Logged in", Toast.LENGTH_SHORT).show();
-                                    startActivity(new Intent(UserLoginPagesActivity.this, AdminLoginPagesActivity.class));
+                                    startActivity(new Intent(UserLoginPagesActivity.this, HomePageActivity.class));
                                     finish();
                                 } else {
                                     Toast.makeText(UserLoginPagesActivity.this, "Wrong Password", Toast.LENGTH_SHORT).show();
