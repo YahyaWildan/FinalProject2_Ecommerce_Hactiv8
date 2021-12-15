@@ -36,4 +36,5 @@
     <string name="txt_team_member">Team Member</string>
     <string name="txt_yahya_wildan">Yahya Wildan</string>
     <string name="rvHomepages">RecycleHomePage</string>
+    <string name="txt_clothing_accessories"><![CDATA[clothing & accessories]]></string>
 </resources>

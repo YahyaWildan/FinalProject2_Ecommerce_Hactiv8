@@ -1,6 +1,6 @@
 package org.meicode.finalprojek2.Data.Network;
 
-import androidx.viewbinding.BuildConfig;
+import org.meicode.finalprojek2.BuildConfig;
 
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
@@ -9,19 +9,18 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class NetworkClient {
     private static Retrofit retrofit = null;
-    public static final String SERVER_URL = "https://fakestoreapi.com/";
 
     public static Retrofit getInstance(){
         OkHttpClient client = new OkHttpClient.Builder()
                 .addInterceptor(getLogging()).build();
 
-        if (retrofit == null){
-            retrofit = new Retrofit.Builder()
-                    .baseUrl(SERVER_URL)
-                    .addConverterFactory(GsonConverterFactory.create())
-                    .client(client)
-                    .build();
-        }
+//        if (retrofit == null){
+//            retrofit = new Retrofit.Builder()
+//                    .baseUrl(BuildConfig.SERVER_URL)
+//                    .addConverterFactory(GsonConverterFactory.create())
+//                    .client(client)
+//                    .build();
+//        }
 
         return retrofit;
     }

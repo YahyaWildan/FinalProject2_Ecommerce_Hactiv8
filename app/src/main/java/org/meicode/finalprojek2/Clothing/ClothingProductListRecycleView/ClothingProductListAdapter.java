@@ -14,7 +14,7 @@ import java.util.List;
 public class ClothingProductListAdapter extends RecyclerView.Adapter<ClothingProductListViewHolder> {
 
     private List<BaseResponse> baseResponses;
-    private Context context;
+    public Context context;
 
     public ClothingProductListAdapter(List<BaseResponse> baseResponses, Context context){
         this.baseResponses = baseResponses;
