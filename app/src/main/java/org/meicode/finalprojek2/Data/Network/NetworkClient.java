@@ -14,13 +14,13 @@ public class NetworkClient {
         OkHttpClient client = new OkHttpClient.Builder()
                 .addInterceptor(getLogging()).build();
 
-//        if (retrofit == null){
-//            retrofit = new Retrofit.Builder()
-//                    .baseUrl(BuildConfig.SERVER_URL)
-//                    .addConverterFactory(GsonConverterFactory.create())
-//                    .client(client)
-//                    .build();
-//        }
+        if (retrofit == null){
+            retrofit = new Retrofit.Builder()
+                    .baseUrl(BuildConfig.SERVER_URL)
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .client(client)
+                    .build();
+        }
 
         return retrofit;
     }
