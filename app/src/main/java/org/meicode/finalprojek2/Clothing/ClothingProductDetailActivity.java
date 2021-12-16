@@ -14,7 +14,10 @@ public class ClothingProductDetailActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        binding = ActivityClothingProductDetailBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        Intent intent  = new Intent(this, ClothingProductListViewHolder.class);
+        String Hasil = getIntent().getStringExtra("Hasil");
+        binding.ivClothingProductDetail.setImageResource(Integer.parseInt(String.valueOf(Hasil)));
+
     }
 }
