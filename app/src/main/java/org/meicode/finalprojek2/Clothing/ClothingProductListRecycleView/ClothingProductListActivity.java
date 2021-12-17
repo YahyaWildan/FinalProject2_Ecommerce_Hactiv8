@@ -18,6 +18,7 @@ import java.util.List;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import retrofit2.http.Path;
 
 public class ClothingProductListActivity extends AppCompatActivity {
 
@@ -26,6 +27,8 @@ public class ClothingProductListActivity extends AppCompatActivity {
     ClothingProductListAdapter clothingProductListAdapter;
 
     List<BaseResponse> clothingResult;
+
+    BaseResponse baseResponse;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +47,7 @@ public class ClothingProductListActivity extends AppCompatActivity {
     }
 
     private void fetchData() {
-        NetworkClient.getInstance().create(ApiService.class).getProducts().enqueue((new Callback<List<BaseResponse>>() {
+        NetworkClient.getInstance().create(ApiService.class).getProducts(baseResponse.category).enqueue((new Callback<List<BaseResponse>>() {
             @Override
             public void onResponse(Call<List<BaseResponse>> call, Response<List<BaseResponse>> response) {
                 if(response.code() == 200 && response.body() != null){

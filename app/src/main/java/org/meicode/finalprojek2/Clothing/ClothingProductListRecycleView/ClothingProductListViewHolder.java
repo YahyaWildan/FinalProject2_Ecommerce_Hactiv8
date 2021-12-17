@@ -1,6 +1,7 @@
 package org.meicode.finalprojek2.Clothing.ClothingProductListRecycleView;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Parcelable;
 import android.view.View;
 
