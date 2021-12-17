@@ -47,7 +47,7 @@ public class ClothingProductListActivity extends AppCompatActivity {
     }
 
     private void fetchData() {
-        NetworkClient.getInstance().create(ApiService.class).getProducts(baseResponse.category).enqueue((new Callback<List<BaseResponse>>() {
+        NetworkClient.getInstance().create(ApiService.class).getJewelery().enqueue((new Callback<List<BaseResponse>>() {
             @Override
             public void onResponse(Call<List<BaseResponse>> call, Response<List<BaseResponse>> response) {
                 if(response.code() == 200 && response.body() != null){

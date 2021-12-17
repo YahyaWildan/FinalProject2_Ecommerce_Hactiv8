@@ -9,7 +9,7 @@ import retrofit2.http.GET;
 import retrofit2.http.Path;
 
 public interface ApiService {
-    @GET("products")
-    public Call<List<BaseResponse>> getProducts(@Path("category")String category);
+    @GET("jewelery")
+    public Call<List<BaseResponse>> getJewelery(@Path("jewelery")String jewelery);
 
 }
