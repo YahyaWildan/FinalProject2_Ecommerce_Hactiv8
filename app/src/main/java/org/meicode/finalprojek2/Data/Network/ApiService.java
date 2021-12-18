@@ -10,6 +10,6 @@ import retrofit2.http.Path;
 
 public interface ApiService {
     @GET("jewelery")
-    public Call<List<BaseResponse>> getJewelery(@Path("jewelery")String jewelery);
+    public Call<List<BaseResponse>> getJewelery();
 
 }
