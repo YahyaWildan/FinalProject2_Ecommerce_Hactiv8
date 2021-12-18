@@ -28,8 +28,6 @@ public class ClothingProductListActivity extends AppCompatActivity {
 
     List<BaseResponse> clothingResult;
 
-    BaseResponse baseResponse;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
