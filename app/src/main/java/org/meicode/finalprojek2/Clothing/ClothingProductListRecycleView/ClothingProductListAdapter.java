@@ -30,7 +30,7 @@ public class ClothingProductListAdapter extends RecyclerView.Adapter<ClothingPro
     @Override
     public void onBindViewHolder(ClothingProductListViewHolder holder, int position) {
         BaseResponse baseResponse = baseResponses.get(position);
-        holder.setDataToView(baseResponse);
+        holder.setDataToView(baseResponse, context);
 
     }
 

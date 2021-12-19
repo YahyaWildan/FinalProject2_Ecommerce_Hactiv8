@@ -1,5 +1,6 @@
 package org.meicode.finalprojek2.Clothing.ClothingProductListRecycleView;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Parcelable;
@@ -26,10 +27,10 @@ public class ClothingProductListViewHolder extends RecyclerView.ViewHolder {
         this.binding = binding;
     }
 
-    public void setDataToView(BaseResponse baseResponse) {
+    public void setDataToView(BaseResponse baseResponse, Context context) {
         binding.tvTitleProductList.setText(baseResponse.getTitle());
         binding.tvPriceList.setText(baseResponse.getPrice());
-        Glide.with(clothingProductListAdapter.context)
+        Glide.with(context)
                 .load(baseResponse.getImage())
                 .diskCacheStrategy(DiskCacheStrategy.NONE)
                 .into(binding.ivProductList);
