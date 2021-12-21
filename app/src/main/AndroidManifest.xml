@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.meicode.finalprojek2">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
@@ -12,23 +13,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProjek2">
         <activity
+            android:name=".DetailProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Clothing.ClothingWomenProductListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Clothing.ClothingMensProductListActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomePageActivity"
             android:exported="false" />
         <activity
             android:name=".AboutActivity"
             android:exported="false" />
-        <activity
-            android:name=".OtherItem.OtherItemProductDetailActivity"
-            android:exported="true" />
-        <activity
-            android:name=".Electronic.ElectronicProductDetailActivity"
-            android:exported="true" />
-        <activity
-            android:name=".Clothing.ClothingProductDetailActivity"
-            android:exported="true" />
-        <activity
-            android:name=".Book.BookProductDetailActivity"
-            android:exported="true" />
         <activity
             android:name=".OtherItem.OtherItemProductActivity"
             android:exported="true" />
@@ -37,15 +35,6 @@
             android:exported="true" />
         <activity
             android:name=".Electronic.ElectronicProductListActivity"
-            android:exported="true" />
-        <activity
-            android:name=".Clothing.ClothingProductListRecycleView.ClothingProductListActivity"
-            android:exported="true" />
-        <activity
-            android:name=".Electronic.ElectronicCategoryActivity"
-            android:exported="true" />
-        <activity
-            android:name=".Clothing.ClothingCategoryActivity"
             android:exported="true" />
         <activity
             android:name=".Clothing.ClothingAccGenderActivity"

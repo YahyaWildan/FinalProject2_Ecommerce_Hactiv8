@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import org.meicode.finalprojek2.Clothing.ClothingAccGenderActivity;
+import org.meicode.finalprojek2.Electronic.ElectronicProductListActivity;
+import org.meicode.finalprojek2.OtherItem.OtherItemProductActivity;
 import org.meicode.finalprojek2.databinding.ActivityHomePageBinding;
 
 public class HomePageActivity extends AppCompatActivity {
@@ -23,6 +25,20 @@ public class HomePageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(HomePageActivity.this, ClothingAccGenderActivity.class));
+            }
+        });
+
+        binding.layoutGoToElectronic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomePageActivity.this, ElectronicProductListActivity.class));
+            }
+        });
+
+        binding.layoutGoToOther.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomePageActivity.this, OtherItemProductActivity.class));
             }
         });
     }
