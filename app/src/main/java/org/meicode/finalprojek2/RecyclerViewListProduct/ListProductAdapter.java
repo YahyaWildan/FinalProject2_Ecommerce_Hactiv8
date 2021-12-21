@@ -17,7 +17,6 @@ import java.util.List;
 public class ListProductAdapter extends RecyclerView.Adapter<ListProductViewHolder> {
 
     private List<BaseResponse> data;
-    private List<BaseResponseList> dataBook;
     private Context context;
 
     public ListProductAdapter(List<BaseResponse> data, Context context) {

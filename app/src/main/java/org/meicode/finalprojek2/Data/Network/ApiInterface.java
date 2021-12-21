@@ -20,7 +20,4 @@ public interface ApiInterface {
     @GET("jewelery")
     public Call<List<BaseResponse>> getALlJewelery();
 
-    @GET("book")
-    public Call<List<BaseResponseList>> getAllBooks();
-
 }
