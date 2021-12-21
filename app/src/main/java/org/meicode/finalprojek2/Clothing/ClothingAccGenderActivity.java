@@ -11,6 +11,7 @@ import org.meicode.finalprojek2.databinding.ActivityClothingAccGenderBinding;
 
 public class ClothingAccGenderActivity extends AppCompatActivity {
     ActivityClothingAccGenderBinding binding;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,8 +20,16 @@ public class ClothingAccGenderActivity extends AppCompatActivity {
 
         binding.tvMensClothing.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                startActivity(new Intent(ClothingAccGenderActivity.this, ClothingCategoryActivity.class));
+            public void onClick(View v) {
+                startActivity(new Intent(ClothingAccGenderActivity.this, ClothingMensProductListActivity.class));
+            }
+        });
+
+        binding.tvWomensClothing.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ClothingAccGenderActivity.this, ClothingWomenProductListActivity.class));
+
             }
         });
     }
