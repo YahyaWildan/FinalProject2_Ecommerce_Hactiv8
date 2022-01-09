@@ -8,6 +8,9 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface ApiInterface {
+
+
+//    method dengan anotasi@get(endpoint)
     @GET("men's%20clothing")
     public Call<List<BaseResponse>> getMenClothing();
 

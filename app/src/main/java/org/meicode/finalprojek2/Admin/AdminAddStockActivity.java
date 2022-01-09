@@ -16,7 +16,6 @@ public class AdminAddStockActivity extends AppCompatActivity {
 
     ActivityAdminAddStockBinding binding;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
